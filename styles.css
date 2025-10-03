@@ -29,13 +29,17 @@ body {
 }
 #section1 {
     background: #86cee4;
-    height: 800px;
+    flex-wrap: wrap;
+
 }
 
 .spot {
         display: flex;
         justify-content: space-evenly;
-        height: 500px;
+        margin-bottom: 50px;
+}
+.item {
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -59,14 +63,14 @@ img:hover {
 #footer {
     background: #7209b7;
     color: rgb(223, 223, 223);
-    padding: 50px 0;
-    height: 250px;
+    padding:100px 0px 50px 0px; 
     display:flex;
     justify-content: center;
 }
 
 p {
-    width: 500px;
+    width: 400px;
+    margin: 0 30px;
 
 }
 
@@ -105,4 +109,43 @@ input {
     padding: 17px 50px;
     font-size: 20px;
     margin-right: 10px;
+}
+
+@media (max-width:1250px){
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .intro {
+        width: 400px;
+    }
+
+    .spot {
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+@media (max-width: 720px){
+
+    .hero {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .intro {
+        width:300px;
+    }
+
+   #footer {
+    flex-wrap: wrap;
+    }
+   
+   .sub {
+    flex-wrap: wrap;
+
+   }
+
 }
