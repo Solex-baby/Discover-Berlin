@@ -4,6 +4,7 @@ html, body {
   background: #3a0ca3;
   box-sizing: border-box;
   font-size: 20px;
+  height: 100%;
 }
 
 h1 {
@@ -26,7 +27,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background: #86cee4;
-  width:560px;
+  width:500px;
   margin: 20px;
   padding: 50px;
 }
@@ -100,9 +101,17 @@ button:hover {
 
 .item {
   flex-wrap: wrap;
-  width:400px;
-  margin-left: 0;
-  margin-right: 0;
+}
+
+.item > item {
+  flex: 1 1 90%;
+}
+
+img {
+    width: 400px;
+    height: 280px;
+    object-fit:cover;
+    margin-bottom: 25px;
 }
 
 .footer {
