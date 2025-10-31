@@ -27,7 +27,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background: #86cee4;
-  width:500px;
+  width:560px;
   margin: 20px;
   padding: 50px;
 }
@@ -98,14 +98,6 @@ button:hover {
 
 @media all and (max-width:720px){
 
-
-.item {
-  flex-wrap: wrap;
-}
-
-.item > item {
-  flex: 1 1 90%;
-}
 
 img {
     width: 400px;
