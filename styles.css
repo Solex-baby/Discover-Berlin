@@ -16,37 +16,40 @@ html, body {
 }
 
 span {
-    margin: 100px auto 50px;
+    margin-top: 100px;
 }
 .title {
     font-size: 50px;
     font-weight: 700;
     background: #f72585;
-    padding: 30px 85px;
+    padding: 30px 65px;
 }
 .intro {
     font-size: 20px;
-    width: 500px;
-    padding: 20px 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 30px;
     color: rgb(209, 209, 209);
     background: #3a0ca3;
 }
 #section1 {
     background: #86cee4;
-    flex-wrap: wrap;
-
 }
-
 .spot {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
         margin-bottom: 50px;
 }
 
-
 .item {
     margin-bottom: 50px;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -82,21 +85,19 @@ img {
     color: #3a0ca3;
 }
 
-#content {
-    width: 300px;
-}
 #footer {
     background: #7209b7;
     color: rgb(223, 223, 223);
     padding:100px 0px 0px 0px; 
+    width: 100%;
     display:flex;
     justify-content: center;
 }
 
 p {
-    width: 400px;
-    margin: 0 30px;
-
+    width: 100%;
+    max-width: 320px;
+    margin: 0 25px;
 }
 
 button {
@@ -163,11 +164,18 @@ input {
 
     .hero {
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
     }
 
+    .title {
+        font-size: 40px;
+        max-width: 320px;
+        padding: 20px 35px
+   }
+
     .intro {
-        width:300px;
+        max-width:280px;
+               padding: 20px 35px
     }
 
    #footer {
@@ -179,9 +187,7 @@ input {
 
    }
 
-   .title {
-    font-size: 40px;
-   }
+ 
 
    h1 {
   font-size: 32px;
@@ -189,6 +195,12 @@ input {
 
    h2 {
   font-size: 24px;
+}
+
+p {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
 }
 
 }
